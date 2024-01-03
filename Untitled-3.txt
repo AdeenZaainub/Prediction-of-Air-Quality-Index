@@ -1,0 +1,9 @@
+-- database: c:\Users\adeen\Desktop\test\airquality.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+SELECT * FROM "air_quality_index";
+
+SELECT strftime('%Y-%m-%d', Date_Time) as date, AVG(value) as avg_value_per_day
+FROM air_quality_index
+GROUP BY date
